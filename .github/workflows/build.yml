@@ -11,4 +11,7 @@ permissions:
 
 jobs:
   build:
-    uses: geode-sdk/build-geode-mod/.github/workflows/build-mod.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: geode-sdk/build-geode-mod@main
