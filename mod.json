@@ -1,0 +1,88 @@
+{
+  "geode": "4.0.0",
+  "gd": {
+    "win": "2.2074",
+    "android": "2.2074",
+    "mac": "2.2074"
+  },
+  "version": "v1.0.0",
+  "id": "acclamation.deco-generator",
+  "name": "Deco Generator",
+  "developer": "Acclamation",
+  "description": "Generate themed decorations for selected objects with customizable color palettes across 36 decoration styles.",
+  "settings": {
+    "theme": {
+      "name": "Decoration Theme",
+      "description": "Select a theme for decoration generation",
+      "type": "string",
+      "default": "Glow",
+      "one_of": [
+        "Glow",
+        "Modern",
+        "Hell",
+        "Nine Circles",
+        "Effect",
+        "Tech",
+        "Art / Artistic",
+        "1.9 Style",
+        "RobTop Style",
+        "Darnoc Style",
+        "Woogi Style",
+        "JoarZ Style",
+        "Core",
+        "Sunset Style",
+        "Industrial",
+        "Monochrome",
+        "Natural / Organic",
+        "Psychedelic",
+        "Minimalist",
+        "Realistic",
+        "Cartoon",
+        "Glitch",
+        "Xaro Style",
+        "Underwater / Ocean",
+        "Space / Cosmic",
+        "Ancient Egypt",
+        "Ice / Arctic",
+        "Gothic / Haunted",
+        "Cyberpunk",
+        "Post-Apocalyptic",
+        "Enchanted Forest",
+        "Steampunk",
+        "Liminal Space",
+        "Volcanic Cavern",
+        "Alien Planet"
+      ]
+    },
+    "color1": {
+      "name": "Primary Color",
+      "description": "Primary theme color (hex format)",
+      "type": "string",
+      "default": "#FF00FF"
+    },
+    "color2": {
+      "name": "Secondary Color",
+      "description": "Secondary theme color (hex format)",
+      "type": "string",
+      "default": "#00FFFF"
+    },
+    "color3": {
+      "name": "Tertiary Color",
+      "description": "Tertiary theme color (hex format)",
+      "type": "string",
+      "default": "#0000FF"
+    },
+    "color4": {
+      "name": "Quaternary Color",
+      "description": "Quaternary theme color (hex format)",
+      "type": "string",
+      "default": "#FF1493"
+    },
+    "color5": {
+      "name": "Quinary Color",
+      "description": "Quinary theme color (hex format)",
+      "type": "string",
+      "default": "#FF00FF"
+    }
+  }
+}
