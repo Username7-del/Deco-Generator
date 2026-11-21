@@ -7,6 +7,13 @@ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 project(deco-generator VERSION 1.0.0)
 
 file(GLOB_RECURSE SOURCES src/*.cpp)
+
+# Disable fmt compile-time format-string parsing on Android/Clang.
+# NDK 29 with fmt's consteval implementation is incompatible in this build.
+if(ANDROID)
+    add_compile_definitions(FMT_USE_CONSTEVAL=0)
+endif()
+
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
 if (NOT DEFINED ENV{GEODE_SDK})
