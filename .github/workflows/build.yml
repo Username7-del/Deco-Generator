@@ -12,6 +12,17 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: geode-sdk/build-geode-mod@main
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build Geode mod
+        id: build
+        uses: geode-sdk/build-geode-mod@ca5481b48c58f9bd2ed4306355c66199bbcdf0e5
+
+      - name: Upload Geode mod
+        uses: actions/upload-artifact@v7
+        with:
+          name: deco-generator
+          path: ${{ steps.build.outputs.build-output }}
